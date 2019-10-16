@@ -18,7 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <!--temp tutorial style-->
+    <!--Temporary styles-->
     <style>
   .chat {
     list-style: none;
@@ -57,7 +57,7 @@
     background-color: #555;
   }
 </style>
-<!-- end temp tutorial style -->
+<!--End temp styles-->
 </head>
 <body>
     <div id="app">
