@@ -35,7 +35,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
  window.Echo = new Echo({
      broadcaster: 'pusher',
-     key: process.env.MIX_PUSHER_APP_KEY,
+     key: "bdc9f7f27fc4e0ea76a8",
      cluster: process.env.MIX_PUSHER_APP_CLUSTER,
      encrypted: true
  });
