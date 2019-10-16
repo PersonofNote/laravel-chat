@@ -9,6 +9,7 @@ class ChatsController extends Controller
     use App\Message;
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\Auth;
+    use App\Events\MessageSent;
     
     public function __construct()
     {
