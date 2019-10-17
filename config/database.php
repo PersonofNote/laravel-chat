@@ -52,7 +52,7 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DATABASE_URL'),
+            'url' => $url,
             'host' => $host,
             'port' => env('DB_PORT', '3306'),
             'database' => $database,
