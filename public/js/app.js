@@ -1896,7 +1896,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['messages']
 });
@@ -37323,17 +37322,7 @@ var render = function() {
               "\n                " + _vm._s(message.message) + "\n            "
             )
           ])
-        ]),
-        _vm._v(" "),
-        _c(
-          "button",
-          {
-            staticClass: "btn btn-primary btn-sm",
-            attrs: { id: "btn-chat" },
-            on: { click: _vm.deleteMessage }
-          },
-          [_vm._v(" Remove Message ")]
-        )
+        ])
       ])
     }),
     0
