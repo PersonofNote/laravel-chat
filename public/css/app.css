@@ -10644,3 +10644,11 @@ a.text-dark:focus {
   }
 }
 
+#btn-chat {
+  height: 100%;
+}
+
+.panel-body {
+  margin-bottom: 2rem;
+}
+

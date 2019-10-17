@@ -11,6 +11,7 @@
                     {{ message.message }}
                 </p>
             </div>
+
         </li>
     </ul>
 </template>
@@ -20,3 +21,7 @@
     props: ['messages']
   };
 </script>
+
+<!--TODO:
+    -if message.user.id = user's id, render delete button
+-->
