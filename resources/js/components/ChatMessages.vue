@@ -11,7 +11,7 @@
                     {{ message.message }}
                 </p>
             </div>
-
+            <button class="btn btn-primary btn-sm" id="btn-chat" @click="deleteMessage"> Remove Message </button>
         </li>
     </ul>
 </template>

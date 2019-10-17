@@ -50,4 +50,21 @@ class ChatsController extends Controller
     
       return ['status' => 'Message Sent!'];
     }
+
+     /**
+     * Remove message from database
+     *
+     * @param  Request $request
+     * @return Response
+     */
+    public function deleteMessage(Request $request)
+    {
+      $user = Auth::user();
+    
+      $message = $user->messages()->delete([
+        'message' => $request->input('message')
+      ]);
+    
+      return ['status' => 'Message Removed!'];
+    }
 }
