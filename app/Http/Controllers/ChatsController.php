@@ -8,10 +8,10 @@ use Illuminate\Support\Facades\Auth;
 use App\Events\MessageSent;
 
 class ChatsController extends Controller
-{   
+{
     public function __construct()
     {
-      $this->middleware('auth');
+        $this->middleware('auth');
     }
     
     /**
@@ -21,7 +21,7 @@ class ChatsController extends Controller
      */
     public function index()
     {
-      return view('chat');
+        return view('chat');
     }
     
     /**
@@ -31,7 +31,7 @@ class ChatsController extends Controller
      */
     public function fetchMessages()
     {
-      return Message::with('user')->get();
+        return Message::with('user')->get();
     }
     
     /**
@@ -42,29 +42,29 @@ class ChatsController extends Controller
      */
     public function sendMessage(Request $request)
     {
-      $user = Auth::user();
+        $user = Auth::user();
     
-      $message = $user->messages()->create([
+        $message = $user->messages()->create([
         'message' => $request->input('message')
       ]);
     
-      return ['status' => 'Message Sent!'];
+        return ['status' => 'Message Sent!'];
     }
 
-     /**
-     * Remove message from database
-     *
-     * @param  Request $request
-     * @return Response
-     */
+    /**
+    * Remove message from database
+    *
+    * @param  Request $request
+    * @return Response
+    */
     public function deleteMessage(Request $request)
     {
-      $user = Auth::user();
+        $user = Auth::user();
     
-      $message = $user->messages()->delete([
+        $message = $user->messages()->delete([
         'message' => $request->input('message')
       ]);
     
-      return ['status' => 'Message Removed!'];
+        return ['status' => 'Message Removed!'];
     }
 }

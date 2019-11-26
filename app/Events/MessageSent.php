@@ -51,4 +51,3 @@ class MessageSent implements ShouldBroadcast
         return new PrivateChannel('chat'); #Laravel is smart enough to add the private- prefix
     }
 }
-
